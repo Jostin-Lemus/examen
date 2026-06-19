@@ -1,0 +1,115 @@
+/* ==========================================================================
+   CUESTIONARIO ESTILO 4: FOREST VINTAGE (NATURAL / ACADÉMICO)
+   ========================================================================== */
+:root {
+    --bg-dark: #f4f1de;
+    --bg-page: #fffdf9;
+    --primary-color: #2d5a27;     /* Verde Bosque */
+    --secondary-color: #d4a373;   /* Cuero / Madera */
+    --text-main: #3d405b;
+    --border-color: #e0d4be;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.notebook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.notebook-page {
+    width: 100%;
+    max-width: 750px;
+    background-color: var(--bg-page);
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(61, 64, 91, 0.1);
+    border: 2px solid var(--border-color);
+    /* Efecto sutil de hojas de libreta */
+    background-image: linear-gradient(#e1e8ed 1px, transparent 1px);
+    background-size: 100% 30px;
+}
+
+.notebook-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+.notebook-btn {
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-main);
+    background-color: #f7f2e4;
+    transition: all 0.2s ease;
+}
+
+.notebook-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* Bloques de Preguntas y Respuestas */
+.bloque {
+    background-color: rgba(242, 235, 217, 0.4);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+.pregunta {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    cursor: grab;
+}
+
+.respuestas-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.respuesta {
+    background-color: #ffffff;
+    color: var(--text-main);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: background 0.2s;
+}
+
+.respuesta:hover {
+    background-color: var(--border-color);
+}
+
+.action-zone {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resultado-nota {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e07a5f;
+}
